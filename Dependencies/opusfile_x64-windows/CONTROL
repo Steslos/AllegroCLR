@@ -1,8 +1,0 @@
-Package: opusfile
-Version: 0.11-3
-Depends: libogg, opus
-Architecture: x64-windows
-Multi-Arch: same
-Abi: cbb0e2be88f497dd25af81bad589a87a87d54cbc
-Description: Stand-alone decoder library for .opus streams
-Type: Port

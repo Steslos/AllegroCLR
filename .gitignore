@@ -361,3 +361,11 @@ MigrationBackup/
 !Dependencies/allegro5_x64-windows/bin/
 !Dependencies/allegro5_x64-windows/bin/*.pdb
 !Dependencies/allegro5_x64-windows/lib/
+
+!Dependencies/bzip2_x64-windows/bin/
+!Dependencies/bzip2_x64-windows/bin/*.pdb
+!Dependencies/bzip2_x64-windows/lib/
+
+!Dependencies/freetype_x64-windows/bin/
+!Dependencies/freetype_x64-windows/bin/*.pdb
+!Dependencies/freetype_x64-windows/lib/
