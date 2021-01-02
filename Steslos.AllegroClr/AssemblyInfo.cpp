@@ -5,7 +5,7 @@ using namespace System::Runtime::InteropServices;
 using namespace System::Security::Permissions;
 
 [assembly:AssemblyTitleAttribute(L"AllegroCLR")];
-[assembly:AssemblyDescriptionAttribute(L"DotNET Core wrapper library for using the Allegro game programming library from C#.")];
+[assembly:AssemblyDescriptionAttribute(L".NET Core wrapper library for using the Allegro game programming library from C#.")];
 [assembly:AssemblyConfigurationAttribute(L"")];
 [assembly:AssemblyCompanyAttribute(L"")];
 [assembly:AssemblyProductAttribute(L"Steslos.AllegroClr")];
@@ -13,7 +13,7 @@ using namespace System::Security::Permissions;
 [assembly:AssemblyTrademarkAttribute(L"")];
 [assembly:AssemblyCultureAttribute(L"")];
 
-[assembly:AssemblyVersionAttribute("1.0.*")];
+[assembly:AssemblyVersionAttribute("1.0.1")];
 
 [assembly:ComVisible(false)];
 

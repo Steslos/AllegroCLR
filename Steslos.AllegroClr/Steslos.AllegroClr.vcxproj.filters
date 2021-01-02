@@ -5,10 +5,365 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{830ee778-c2fe-4f52-8459-d57473ae2353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enums">
+      <UniqueIdentifier>{27521bb7-dfb0-4370-b60b-f41d5a8b2a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLLs">
+      <UniqueIdentifier>{5d926d4e-17b4-436f-a397-fe200d162dfd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AlAudioAddon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlAudioCodecAddon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlConfigurationFiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlFileSystemRoutines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlFullScreenModes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlGraphicsRoutines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlImageIoAddon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlJoystickRoutines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlKeyboardRoutines.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroAudioStream.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroBitmap.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroColor.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroConfig.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroConfigEntry.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroConfigSection.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroDisplay.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroDisplayMode.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroEvent.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroEventQueue.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroEventSource.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroJoystick.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroJoystickState.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroKeyboardState.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroMixer.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroMonitorInfo.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroPath.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroSample.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroSampleId.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroSampleInstance.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroTimeout.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroTimer.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroUserEvent.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AllegroVoice.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AlMonitors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlWrapperUtility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NativePointerWrapper.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroAudioDepth.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroLibraryHeaders.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Al.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroAudioEventType.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroAudioStream.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroBitmap.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroBitmapFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroBitmapFlipFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroBitmapLoadFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroChannelConfiguration.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroColor.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroConfig.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroConfigEntry.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroConfigSection.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDisplay.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDisplayFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDisplayMode.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDisplayOption.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDisplayOrientation.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroEvent.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroEventQueue.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroEventSource.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroEventType.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroImportance.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroJoyFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroJoystick.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroJoystickState.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroKeyboardModifier.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroKeyboardState.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroKeyCode.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroMixer.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroMixerQuality.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroMonitorInfo.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroPath.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroPixelFormat.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroPlaymode.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroSample.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroSampleId.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroSampleInstance.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroStandardPath.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroSystemId.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroTimeout.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroTimer.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroUserEvent.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroVoice.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_acodec-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_audio-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_color-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_dialog-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_font-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_image-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_memfile-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_physfs-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_primitives-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_ttf-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_video-5.2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\bzip2_x64-windows\bin\bz2.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\freetype_x64-windows\bin\freetype.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libflac_x64-windows\bin\FLAC.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libflac_x64-windows\bin\FLAC++.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libogg_x64-windows\bin\ogg.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libpng_x64-windows\bin\libpng16.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theora.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theoradec.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theoraenc.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbis.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbisfile.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbisenc.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\openal-soft_x64-windows\bin\OpenAL32.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\opus_x64-windows\bin\opus.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\physfs_x64-windows\bin\physfs.dll">
+      <Filter>DLLs</Filter>
+    </None>
+    <None Include="..\Dependencies\zlib_x64-windows\bin\zlib1.dll">
+      <Filter>DLLs</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -7,10 +7,212 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AlAudioAddon.cpp" />
+    <ClCompile Include="AlAudioCodecAddon.cpp" />
+    <ClCompile Include="AlConfigurationFiles.cpp" />
+    <ClCompile Include="AlDisplay.cpp" />
+    <ClCompile Include="AlEvents.cpp" />
+    <ClCompile Include="AlFileSystemRoutines.cpp" />
+    <ClCompile Include="AlFullScreenModes.cpp" />
+    <ClCompile Include="AlGraphicsRoutines.cpp" />
+    <ClCompile Include="AlImageIoAddon.cpp" />
+    <ClCompile Include="AlJoystickRoutines.cpp" />
+    <ClCompile Include="AlKeyboardRoutines.cpp" />
+    <ClCompile Include="AllegroAudioStream.cpp" />
+    <ClCompile Include="AllegroBitmap.cpp" />
+    <ClCompile Include="AllegroColor.cpp" />
+    <ClCompile Include="AllegroConfig.cpp" />
+    <ClCompile Include="AllegroConfigEntry.cpp" />
+    <ClCompile Include="AllegroConfigSection.cpp" />
+    <ClCompile Include="AllegroDisplay.cpp" />
+    <ClCompile Include="AllegroDisplayMode.cpp" />
+    <ClCompile Include="AllegroEvent.cpp" />
+    <ClCompile Include="AllegroEventQueue.cpp" />
+    <ClCompile Include="AllegroEventSource.cpp" />
+    <ClCompile Include="AllegroJoystick.cpp" />
+    <ClCompile Include="AllegroJoystickState.cpp" />
+    <ClCompile Include="AllegroKeyboardState.cpp" />
+    <ClCompile Include="AllegroMixer.cpp" />
+    <ClCompile Include="AllegroMonitorInfo.cpp" />
+    <ClCompile Include="AllegroPath.cpp" />
+    <ClCompile Include="AllegroSample.cpp" />
+    <ClCompile Include="AllegroSampleId.cpp" />
+    <ClCompile Include="AllegroSampleInstance.cpp" />
+    <ClCompile Include="AllegroTimeout.cpp" />
+    <ClCompile Include="AllegroTimer.cpp" />
+    <ClCompile Include="AllegroUserEvent.cpp" />
+    <ClCompile Include="AllegroVoice.cpp" />
+    <ClCompile Include="AlMonitors.cpp" />
+    <ClCompile Include="AlSystem.cpp" />
+    <ClCompile Include="AlTime.cpp" />
+    <ClCompile Include="AlTimer.cpp" />
+    <ClCompile Include="AlWrapperUtility.cpp" />
     <ClCompile Include="AssemblyInfo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DeploymentContent>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Al.h" />
+    <ClInclude Include="AllegroAudioDepth.h" />
+    <ClInclude Include="AllegroAudioEventType.h" />
+    <ClInclude Include="AllegroAudioStream.h" />
+    <ClInclude Include="AllegroBitmap.h" />
+    <ClInclude Include="AllegroBitmapFlags.h" />
+    <ClInclude Include="AllegroBitmapFlipFlags.h" />
+    <ClInclude Include="AllegroBitmapLoadFlags.h" />
+    <ClInclude Include="AllegroChannelConfiguration.h" />
+    <ClInclude Include="AllegroColor.h" />
+    <ClInclude Include="AllegroConfig.h" />
+    <ClInclude Include="AllegroConfigEntry.h" />
+    <ClInclude Include="AllegroConfigSection.h" />
+    <ClInclude Include="AllegroDisplay.h" />
+    <ClInclude Include="AllegroDisplayFlags.h" />
+    <ClInclude Include="AllegroDisplayMode.h" />
+    <ClInclude Include="AllegroDisplayOption.h" />
+    <ClInclude Include="AllegroDisplayOrientation.h" />
+    <ClInclude Include="AllegroEvent.h" />
+    <ClInclude Include="AllegroEventQueue.h" />
+    <ClInclude Include="AllegroEventSource.h" />
+    <ClInclude Include="AllegroEventType.h" />
+    <ClInclude Include="AllegroImportance.h" />
+    <ClInclude Include="AllegroJoyFlags.h" />
+    <ClInclude Include="AllegroJoystick.h" />
+    <ClInclude Include="AllegroJoystickState.h" />
+    <ClInclude Include="AllegroKeyboardModifier.h" />
+    <ClInclude Include="AllegroKeyboardState.h" />
+    <ClInclude Include="AllegroKeyCode.h" />
+    <ClInclude Include="AllegroLibraryHeaders.h" />
+    <ClInclude Include="AllegroMixer.h" />
+    <ClInclude Include="AllegroMixerQuality.h" />
+    <ClInclude Include="AllegroMonitorInfo.h" />
+    <ClInclude Include="AllegroPath.h" />
+    <ClInclude Include="AllegroPixelFormat.h" />
+    <ClInclude Include="AllegroPlaymode.h" />
+    <ClInclude Include="AllegroSample.h" />
+    <ClInclude Include="AllegroSampleId.h" />
+    <ClInclude Include="AllegroSampleInstance.h" />
+    <ClInclude Include="AllegroStandardPath.h" />
+    <ClInclude Include="AllegroSystemId.h" />
+    <ClInclude Include="AllegroTimeout.h" />
+    <ClInclude Include="AllegroTimer.h" />
+    <ClInclude Include="AllegroUserEvent.h" />
+    <ClInclude Include="AllegroVoice.h" />
+    <ClInclude Include="NativePointerWrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_acodec-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_audio-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_color-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_dialog-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_font-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_image-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_memfile-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_physfs-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_primitives-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_ttf-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\allegro5_x64-windows\bin\allegro_video-5.2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\bzip2_x64-windows\bin\bz2.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\freetype_x64-windows\bin\freetype.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libflac_x64-windows\bin\FLAC++.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libflac_x64-windows\bin\FLAC.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libogg_x64-windows\bin\ogg.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libpng_x64-windows\bin\libpng16.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theora.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theoradec.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libtheora_x64-windows\bin\theoraenc.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbis.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbisenc.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\libvorbis_x64-windows\bin\vorbisfile.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\openal-soft_x64-windows\bin\OpenAL32.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\opus_x64-windows\bin\opus.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\physfs_x64-windows\bin\physfs.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
+    <None Include="..\Dependencies\zlib_x64-windows\bin\zlib1.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -50,7 +252,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_acodec.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_audio.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_color.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_dialog.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_font.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_image.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_memfile.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_physfs.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_primitives.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_ttf.lib;$(SolutionDir)Dependencies\allegro5_x64-windows\lib\allegro_video.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
