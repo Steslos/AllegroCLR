@@ -1,0 +1,8 @@
+Package: physfs
+Version: 3.0.2-2
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b5100a3630b83c3758fe08682a0230e24c85c600
+Description: a library to provide abstract access to various archives
+Type: Port

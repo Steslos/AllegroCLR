@@ -1,0 +1,16 @@
+# Opus codec reference implementation pkg-config file
+
+prefix=D:/Repos/vcpkg/packages/opus_x64-windows
+exec_prefix=D:/Repos/vcpkg/packages/opus_x64-windows
+libdir=D:/Repos/vcpkg/packages/opus_x64-windows/lib
+includedir=D:/Repos/vcpkg/packages/opus_x64-windows/include
+
+Name: Opus
+Description: Opus IETF audio codec ( build)
+URL: https://opus-codec.org/
+Version: 0
+Requires:
+Conflicts:
+Libs: -LD:/Repos/vcpkg/packages/opus_x64-windows/lib -lopus
+Libs.private: 
+Cflags: -ID:/Repos/vcpkg/packages/opus_x64-windows/include/opus

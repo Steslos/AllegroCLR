@@ -1,0 +1,26 @@
+Package: freetype
+Version: 2.10.2
+Port-Version: 1
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c713d5c9f8fe47be529dd60834778392b06a821b
+Description: A library to render fonts.
+Type: Port
+Default-Features: bzip2, png
+
+Package: freetype
+Feature: bzip2
+Depends: bzip2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support bzip2 compressed fonts.
+Type: Port
+
+Package: freetype
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support PNG compressed OpenType embedded bitmaps.
+Type: Port
