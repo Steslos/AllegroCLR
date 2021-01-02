@@ -358,5 +358,5 @@ MigrationBackup/
 .ionide/
 
 # Allegro + dependencies
-
-!allegro5_x64-windows/**
+!Dependencies/allegro5_x64-windows/bin/
+!Dependencies/allegro5_x64-windows/lib/
