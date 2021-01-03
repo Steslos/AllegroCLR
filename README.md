@@ -1,5 +1,6 @@
 # Welcome to Allegro... in C#!
 AllegroCLR is a .NET Core wrapper library, allowing C# code to use the Allegro game programming library in Windows.
+![image](https://github.com/Steslos/AllegroClr/blob/main/allegro-to-allegroclr.png)
 
 # Requirements
 - Visual Studio 2019
