@@ -15,6 +15,7 @@ namespace Steslos::AllegroClr
 	ref class AllegroEvent;
 	ref class AllegroEventQueue;
 	ref class AllegroEventSource;
+	ref class AllegroFont;
 	ref class AllegroJoystick;
 	ref class AllegroJoystickState;
 	ref class AllegroKeyboardState;
@@ -38,6 +39,7 @@ namespace Steslos::AllegroClr
 	enum class AllegroDisplayFlags;
 	enum class AllegroDisplayOption;
 	enum class AllegroDisplayOrientation;
+	enum class AllegroDrawTextFlags;
 	enum class AllegroEventType;
 	enum class AllegroImportance;
 	enum class AllegroJoyFlags;
@@ -48,6 +50,7 @@ namespace Steslos::AllegroClr
 	enum class AllegroPlaymode;
 	enum class AllegroStandardPath;
 	enum class AllegroSystemId;
+	enum class AllegroTtfFlags;
 
 	public ref class Al
 	{
@@ -267,6 +270,31 @@ namespace Steslos::AllegroClr
 		// File system routines
 		static Boolean MakeDirectory(String^ path);
 
+		// Font routines
+		static Boolean InitFontAddon();
+		static Boolean IsFontAddonInitialized();
+		static void ShutdownFontAddon();
+		static AllegroFont^ LoadFont(String^ filename, Int32 size, AllegroBitmapFlags flags);
+		static void DestroyFont(AllegroFont^ font);
+		static Int32 GetFontLineHeight(AllegroFont^ font);
+		static Int32 GetFontAscent(AllegroFont^ font);
+		static Int32 GetFontDescent(AllegroFont^ font);
+		static Int32 GetTextWidth(AllegroFont^ font, String^ text);
+		static void DrawText(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ text);
+		static void DrawJustifiedText(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ text);
+		static void DrawTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
+		static void DrawJustifiedTextF(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
+		static void GetTextDimensions(AllegroFont^ font, String^ text, Int32% bbx, Int32% bby, Int32% bbw, Int32% bbh);
+		static Int32 GetAllegroFontVersion();
+		static Int32 GetFontRanges(AllegroFont^ font, Int32 rangesCount, array<Int32>^ ranges);
+		static void SetFallbackFont(AllegroFont^ font, AllegroFont^ fallbackFont);
+		static AllegroFont^ GetFallbackFont(AllegroFont^ font);
+		// static Boolean RegisterFontLoader(String^ extension, Func<String^, AllegroBitmapFlags, AllegroFont^> loadFont);
+		// static Int32 GetUStrWidth(AllegroFont^ font, String^ uText);
+		// static void DrawUstr(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ text);
+		// static void DrawJustifiedUStr(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ text);
+		// static void GetUStrDimensions(AllegroFont^ font, String^ text, Int32% bbx, Int32% bby, Int32% bbw, Int32% bbh);
+
 		// Fullscreen modes
 		static AllegroDisplayMode^ GetDisplayMode(Int32 index, AllegroDisplayMode^ mode);
 		static Int32 GetNumDisplayModes();
@@ -398,6 +426,19 @@ namespace Steslos::AllegroClr
 		static Int32 GetNumVideoAdapters();
 		static void SetNewDisplayAdapter(Int32 adapter);
 
+		// Multiline text drawing
+		static void DrawMultilineText(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text);
+		static void DrawMultilineTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text, ... array<String^>^ args);
+		// static void DoMultilineText(AllegroFont^ font, Single maxWidth, String^ text, Func<Int32, String^, Int32, Object^, Boolean> cb, Object^ obj);
+		// static void DoMultilineUStr(AllegroFont^ font, Single maxWidth, String^ text, Func<Int32, String^, Int32, Object^, Boolean> cb, Object^ obj);
+		// static void DrawMultilineUStr(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text);
+
+		// Per glyph text handling
+		static void DrawGlyph(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Int32 codePoint);
+		static Int32 GetGlyphWidth(AllegroFont^ font, Int32 codePoint);
+		static Boolean GetGlyphDimensions(AllegroFont^ font, Int32 codePoint, Int32% bbx, Int32% bby, Int32% bbw, Int32% bbh);
+		static Int32 GetGlyphAdvance(AllegroFont^ font, Int32 codePoint1, Int32 codePoint2);
+
 		// System
 		static UInt32 GetAllegroVersion();
 		static String^ GetAppName();
@@ -435,6 +476,14 @@ namespace Steslos::AllegroClr
 		static void SetTimerSpeed(AllegroTimer^ timer, Double newSpeedSecs);
 		static void StartTimer(AllegroTimer^ timer);
 		static void StopTimer(AllegroTimer^ timer);
+
+		// TTF fonts
+		static Boolean InitTtfAddon();
+		static Boolean IsTtfAddonInitialized();
+		static void ShutdownTtfAddon();
+		static AllegroFont^ LoadTtfFont(String^ filename, Int32 size, AllegroTtfFlags flags);
+		static AllegroFont^ LoadTtfFontStretch(String^ filename, Int32 w, Int32 h, AllegroTtfFlags flags);
+		static Int32 GetAllegroTtfVersion();
 
 		// Wrapper
 		static String^ GetAllegroCliBuild();

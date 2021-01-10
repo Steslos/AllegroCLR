@@ -29,6 +29,7 @@
     <ClCompile Include="AllegroEvent.cpp" />
     <ClCompile Include="AllegroEventQueue.cpp" />
     <ClCompile Include="AllegroEventSource.cpp" />
+    <ClCompile Include="AllegroFont.cpp" />
     <ClCompile Include="AllegroJoystick.cpp" />
     <ClCompile Include="AllegroJoystickState.cpp" />
     <ClCompile Include="AllegroKeyboardState.cpp" />
@@ -71,10 +72,12 @@
     <ClInclude Include="AllegroDisplayMode.h" />
     <ClInclude Include="AllegroDisplayOption.h" />
     <ClInclude Include="AllegroDisplayOrientation.h" />
+    <ClInclude Include="AllegroDrawTextFlags.h" />
     <ClInclude Include="AllegroEvent.h" />
     <ClInclude Include="AllegroEventQueue.h" />
     <ClInclude Include="AllegroEventSource.h" />
     <ClInclude Include="AllegroEventType.h" />
+    <ClInclude Include="AllegroFont.h" />
     <ClInclude Include="AllegroImportance.h" />
     <ClInclude Include="AllegroJoyFlags.h" />
     <ClInclude Include="AllegroJoystick.h" />
@@ -96,6 +99,7 @@
     <ClInclude Include="AllegroSystemId.h" />
     <ClInclude Include="AllegroTimeout.h" />
     <ClInclude Include="AllegroTimer.h" />
+    <ClInclude Include="AllegroTtfFlags.h" />
     <ClInclude Include="AllegroUserEvent.h" />
     <ClInclude Include="AllegroVoice.h" />
     <ClInclude Include="NativePointerWrapper.h" />
@@ -220,7 +224,7 @@
     <Keyword>NetCoreCProj</Keyword>
     <RootNamespace>SteslosAllegroClr</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -242,6 +246,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(ProjectDir)bin\$(Platform)-$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\$(Platform)-$(Configuration)\</IntDir>
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

@@ -6,12 +6,12 @@ namespace Steslos::AllegroClr
 {
 	String^ Al::GetAllegroCliBuild()
 	{
-		return gcnew String("AllegroCli.Wrapper .NET Core 3.1");
+		return gcnew String("AllegroCli.Wrapper .NET 5");
 	}
 
 	String^ Al::GetAllegroCliVersion()
 	{
-		return gcnew String("2.1.0");
+		return gcnew String("1.1.0");
 	}
 
 	Double Al::GetBpmToSecs(Double x)

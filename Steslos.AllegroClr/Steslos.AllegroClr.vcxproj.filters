@@ -139,6 +139,9 @@
     <ClCompile Include="AlWrapperUtility.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AllegroFont.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NativePointerWrapper.h">
@@ -278,6 +281,15 @@
     </ClInclude>
     <ClInclude Include="AllegroVoice.h">
       <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroFont.h">
+      <Filter>Source Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroDrawTextFlags.h">
+      <Filter>Source Files\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="AllegroTtfFlags.h">
+      <Filter>Source Files\Enums</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
