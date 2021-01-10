@@ -13,6 +13,7 @@
     <ClCompile Include="AlDisplay.cpp" />
     <ClCompile Include="AlEvents.cpp" />
     <ClCompile Include="AlFileSystemRoutines.cpp" />
+    <ClCompile Include="AlFontRoutines.cpp" />
     <ClCompile Include="AlFullScreenModes.cpp" />
     <ClCompile Include="AlGraphicsRoutines.cpp" />
     <ClCompile Include="AlImageIoAddon.cpp" />
@@ -44,9 +45,12 @@
     <ClCompile Include="AllegroUserEvent.cpp" />
     <ClCompile Include="AllegroVoice.cpp" />
     <ClCompile Include="AlMonitors.cpp" />
+    <ClCompile Include="AlMultilineTextDrawing.cpp" />
+    <ClCompile Include="AlPerGlyphTextHandling.cpp" />
     <ClCompile Include="AlSystem.cpp" />
     <ClCompile Include="AlTime.cpp" />
     <ClCompile Include="AlTimer.cpp" />
+    <ClCompile Include="AlTtfFonts.cpp" />
     <ClCompile Include="AlWrapperUtility.cpp" />
     <ClCompile Include="AssemblyInfo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>

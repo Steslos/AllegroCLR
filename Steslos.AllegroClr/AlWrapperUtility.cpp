@@ -1,5 +1,4 @@
 #include "Al.h"
-
 #include "AllegroLibraryHeaders.h"
 
 namespace Steslos::AllegroClr

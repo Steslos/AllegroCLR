@@ -282,11 +282,11 @@ namespace Steslos::AllegroClr
 		static Int32 GetTextWidth(AllegroFont^ font, String^ text);
 		static void DrawText(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ text);
 		static void DrawJustifiedText(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ text);
-		static void DrawTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
-		static void DrawJustifiedTextF(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
+		// static void DrawTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
+		// static void DrawJustifiedTextF(AllegroFont^ font, AllegroColor^ color, Single x1, Single x2, Single y, Single diff, AllegroDrawTextFlags flags, String^ format, ... array<String^>^ args);
 		static void GetTextDimensions(AllegroFont^ font, String^ text, Int32% bbx, Int32% bby, Int32% bbw, Int32% bbh);
 		static Int32 GetAllegroFontVersion();
-		static Int32 GetFontRanges(AllegroFont^ font, Int32 rangesCount, array<Int32>^ ranges);
+		// static Int32 GetFontRanges(AllegroFont^ font, Int32 rangesCount, array<Int32>^ ranges);
 		static void SetFallbackFont(AllegroFont^ font, AllegroFont^ fallbackFont);
 		static AllegroFont^ GetFallbackFont(AllegroFont^ font);
 		// static Boolean RegisterFontLoader(String^ extension, Func<String^, AllegroBitmapFlags, AllegroFont^> loadFont);
@@ -428,7 +428,7 @@ namespace Steslos::AllegroClr
 
 		// Multiline text drawing
 		static void DrawMultilineText(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text);
-		static void DrawMultilineTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text, ... array<String^>^ args);
+		// static void DrawMultilineTextF(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text, ... array<String^>^ args);
 		// static void DoMultilineText(AllegroFont^ font, Single maxWidth, String^ text, Func<Int32, String^, Int32, Object^, Boolean> cb, Object^ obj);
 		// static void DoMultilineUStr(AllegroFont^ font, Single maxWidth, String^ text, Func<Int32, String^, Int32, Object^, Boolean> cb, Object^ obj);
 		// static void DrawMultilineUStr(AllegroFont^ font, AllegroColor^ color, Single x, Single y, Single maxWidth, Single maxHeight, AllegroDrawTextFlags flags, String^ text);
