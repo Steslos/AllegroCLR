@@ -10,7 +10,7 @@ namespace Steslos::AllegroClr
 
 	String^ Al::GetAllegroCliVersion()
 	{
-		return gcnew String("1.1.0");
+		return gcnew String("1.1.1");
 	}
 
 	Double Al::GetBpmToSecs(Double x)
