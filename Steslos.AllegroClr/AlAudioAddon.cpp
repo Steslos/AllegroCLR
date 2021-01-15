@@ -295,6 +295,10 @@ namespace Steslos::AllegroClr
 
 	Boolean Al::PlaySample(AllegroSample^ sample, Single gain, Single pan, Single speed, AllegroPlaymode loop, AllegroSampleId^% retId)
 	{
+		if (retId == nullptr)
+		{
+			retId = gcnew AllegroSampleId(new ALLEGRO_SAMPLE_ID());
+		}
 		auto nativeSample = sample->GetNativePointer();
 		auto nativeLoop = static_cast<ALLEGRO_PLAYMODE>(loop);
 		auto nativeRetId = retId->GetNativePointer();
